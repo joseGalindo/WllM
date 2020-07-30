@@ -14,6 +14,8 @@
 		6614F1FF24D34A7100B2D809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6614F1FE24D34A7100B2D809 /* Assets.xcassets */; };
 		6614F20224D34A7100B2D809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6614F20024D34A7100B2D809 /* LaunchScreen.storyboard */; };
 		6614F20D24D34A7200B2D809 /* WMTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6614F20C24D34A7200B2D809 /* WMTestTests.swift */; };
+		CA5B889B2A0C4BA4A990B746 /* Pods_WMTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E40C27F98F47451ABD24A9 /* Pods_WMTest.framework */; };
+		E184AAA0B4EB2A4EF97F7FB5 /* Pods_WMTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4D1D05DED12CE875A0771E /* Pods_WMTestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21E460DB45E517BA94C2180B /* Pods-WMTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMTestTests.debug.xcconfig"; path = "Target Support Files/Pods-WMTestTests/Pods-WMTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56DF493AB97C2E46342254BE /* Pods-WMTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMTest.debug.xcconfig"; path = "Target Support Files/Pods-WMTest/Pods-WMTest.debug.xcconfig"; sourceTree = "<group>"; };
 		6614F1F224D34A6B00B2D809 /* WMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6614F1F524D34A6B00B2D809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6614F1F724D34A6B00B2D809 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +42,10 @@
 		6614F20824D34A7100B2D809 /* WMTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6614F20C24D34A7200B2D809 /* WMTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMTestTests.swift; sourceTree = "<group>"; };
 		6614F20E24D34A7200B2D809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7103878F2A3A775BBF2AF354 /* Pods-WMTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMTestTests.release.xcconfig"; path = "Target Support Files/Pods-WMTestTests/Pods-WMTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		83E40C27F98F47451ABD24A9 /* Pods_WMTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4D1D05DED12CE875A0771E /* Pods_WMTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7E9EAEE608DB2F99F675E2 /* Pods-WMTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMTest.release.xcconfig"; path = "Target Support Files/Pods-WMTest/Pods-WMTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5B889B2A0C4BA4A990B746 /* Pods_WMTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E184AAA0B4EB2A4EF97F7FB5 /* Pods_WMTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37126A69E53ED5D747B9ECA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56DF493AB97C2E46342254BE /* Pods-WMTest.debug.xcconfig */,
+				BA7E9EAEE608DB2F99F675E2 /* Pods-WMTest.release.xcconfig */,
+				21E460DB45E517BA94C2180B /* Pods-WMTestTests.debug.xcconfig */,
+				7103878F2A3A775BBF2AF354 /* Pods-WMTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6614F1E924D34A6B00B2D809 = {
 			isa = PBXGroup;
 			children = (
 				6614F1F424D34A6B00B2D809 /* WMTest */,
 				6614F20B24D34A7100B2D809 /* WMTestTests */,
 				6614F1F324D34A6B00B2D809 /* Products */,
+				37126A69E53ED5D747B9ECA9 /* Pods */,
+				83C6130DA5B0188681AF1B81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +123,15 @@
 			path = WMTestTests;
 			sourceTree = "<group>";
 		};
+		83C6130DA5B0188681AF1B81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83E40C27F98F47451ABD24A9 /* Pods_WMTest.framework */,
+				AD4D1D05DED12CE875A0771E /* Pods_WMTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6614F21124D34A7200B2D809 /* Build configuration list for PBXNativeTarget "WMTest" */;
 			buildPhases = (
+				02E55BA61D0C0F050614406F /* [CP] Check Pods Manifest.lock */,
 				6614F1EE24D34A6B00B2D809 /* Sources */,
 				6614F1EF24D34A6B00B2D809 /* Frameworks */,
 				6614F1F024D34A6B00B2D809 /* Resources */,
+				1F8711B50803A0BC24227894 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6614F21424D34A7200B2D809 /* Build configuration list for PBXNativeTarget "WMTestTests" */;
 			buildPhases = (
+				AC40C7EBDBCE5AEC329B03C1 /* [CP] Check Pods Manifest.lock */,
 				6614F20424D34A7100B2D809 /* Sources */,
 				6614F20524D34A7100B2D809 /* Frameworks */,
 				6614F20624D34A7100B2D809 /* Resources */,
@@ -194,6 +230,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E55BA61D0C0F050614406F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WMTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F8711B50803A0BC24227894 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WMTest/Pods-WMTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WMTest/Pods-WMTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WMTest/Pods-WMTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC40C7EBDBCE5AEC329B03C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WMTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6614F1EE24D34A6B00B2D809 /* Sources */ = {
@@ -360,6 +460,7 @@
 		};
 		6614F21224D34A7200B2D809 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56DF493AB97C2E46342254BE /* Pods-WMTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +479,7 @@
 		};
 		6614F21324D34A7200B2D809 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA7E9EAEE608DB2F99F675E2 /* Pods-WMTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +498,7 @@
 		};
 		6614F21524D34A7200B2D809 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E460DB45E517BA94C2180B /* Pods-WMTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +521,7 @@
 		};
 		6614F21624D34A7200B2D809 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7103878F2A3A775BBF2AF354 /* Pods-WMTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
