@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		6614F1FF24D34A7100B2D809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6614F1FE24D34A7100B2D809 /* Assets.xcassets */; };
 		6614F20224D34A7100B2D809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6614F20024D34A7100B2D809 /* LaunchScreen.storyboard */; };
 		6614F20D24D34A7200B2D809 /* WMTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6614F20C24D34A7200B2D809 /* WMTestTests.swift */; };
+		6614F21B24D36C4600B2D809 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 6614F21A24D36C4600B2D809 /* Model */; };
+		6614F21F24D36D1300B2D809 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6614F21E24D36D1300B2D809 /* ApiService.swift */; };
 		CA5B889B2A0C4BA4A990B746 /* Pods_WMTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E40C27F98F47451ABD24A9 /* Pods_WMTest.framework */; };
 		E184AAA0B4EB2A4EF97F7FB5 /* Pods_WMTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4D1D05DED12CE875A0771E /* Pods_WMTestTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,8 @@
 		6614F20824D34A7100B2D809 /* WMTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6614F20C24D34A7200B2D809 /* WMTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMTestTests.swift; sourceTree = "<group>"; };
 		6614F20E24D34A7200B2D809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6614F21A24D36C4600B2D809 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		6614F21E24D36D1300B2D809 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		7103878F2A3A775BBF2AF354 /* Pods-WMTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMTestTests.release.xcconfig"; path = "Target Support Files/Pods-WMTestTests/Pods-WMTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		83E40C27F98F47451ABD24A9 /* Pods_WMTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4D1D05DED12CE875A0771E /* Pods_WMTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +80,6 @@
 				21E460DB45E517BA94C2180B /* Pods-WMTestTests.debug.xcconfig */,
 				7103878F2A3A775BBF2AF354 /* Pods-WMTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +106,9 @@
 		6614F1F424D34A6B00B2D809 /* WMTest */ = {
 			isa = PBXGroup;
 			children = (
+				6614F21D24D36D0000B2D809 /* ViewModel */,
+				6614F21C24D36C5A00B2D809 /* APIService */,
+				6614F21A24D36C4600B2D809 /* Model */,
 				6614F1F524D34A6B00B2D809 /* AppDelegate.swift */,
 				6614F1F724D34A6B00B2D809 /* SceneDelegate.swift */,
 				6614F1F924D34A6B00B2D809 /* ViewController.swift */,
@@ -121,6 +127,21 @@
 				6614F20E24D34A7200B2D809 /* Info.plist */,
 			);
 			path = WMTestTests;
+			sourceTree = "<group>";
+		};
+		6614F21C24D36C5A00B2D809 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				6614F21E24D36D1300B2D809 /* ApiService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		6614F21D24D36D0000B2D809 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		83C6130DA5B0188681AF1B81 /* Frameworks */ = {
@@ -218,6 +239,7 @@
 			files = (
 				6614F20224D34A7100B2D809 /* LaunchScreen.storyboard in Resources */,
 				6614F1FF24D34A7100B2D809 /* Assets.xcassets in Resources */,
+				6614F21B24D36C4600B2D809 /* Model in Resources */,
 				6614F1FD24D34A6B00B2D809 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +324,7 @@
 			files = (
 				6614F1FA24D34A6B00B2D809 /* ViewController.swift in Sources */,
 				6614F1F624D34A6B00B2D809 /* AppDelegate.swift in Sources */,
+				6614F21F24D36D1300B2D809 /* ApiService.swift in Sources */,
 				6614F1F824D34A6B00B2D809 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
