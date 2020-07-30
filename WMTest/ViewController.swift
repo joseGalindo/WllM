@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var mTableView: UITableView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        /* ApiService.shared.methodGET(endpoint: .storeLocator, onSuccess: { (respuesta : StoreAddressResponse?) in
+            print(respuesta!)
+        }) { (mError) in
+            
+        }*/
+        
     }
 
 

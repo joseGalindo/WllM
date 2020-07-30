@@ -12,7 +12,7 @@ final public class ApiService {
 
     private let baseURL = URL(string: "https://www.walmartmobile.com.mx/walmart-services/mg")!
     private var decoder : JSONDecoder!
-    public typealias APIRequestCompleteSuccessClosure<T : Codable> = (_ responseObj : T?) -> Void
+    public typealias APIRequestCompleteSuccessClosure<T : Decodable> = (_ responseObj : T?) -> Void
     public typealias APIRequestCompleteFailureClosure = (_ reason : APIError?) -> Void
     
     public enum APIError: Error {
@@ -37,7 +37,7 @@ final public class ApiService {
         decoder = JSONDecoder()
     }
     
-    public func methodGET<T : Codable>(endpoint : Endpoint, /*params, */
+    public func methodGET<T : Decodable>(endpoint : Endpoint, /*params, */
         onSuccess successBlock : @escaping APIRequestCompleteSuccessClosure<T>,
         onFailure failureBlock : @escaping APIRequestCompleteFailureClosure) {
         let queryURL = baseURL.appendingPathComponent(endpoint.path())
