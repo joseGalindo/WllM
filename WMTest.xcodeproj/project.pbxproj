@@ -15,10 +15,10 @@
 		6614F20224D34A7100B2D809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6614F20024D34A7100B2D809 /* LaunchScreen.storyboard */; };
 		6614F20D24D34A7200B2D809 /* WMTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6614F20C24D34A7200B2D809 /* WMTestTests.swift */; };
 		6614F21F24D36D1300B2D809 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6614F21E24D36D1300B2D809 /* ApiService.swift */; };
+		6646598324D3E07F003DE2BE /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6646598224D3E07F003DE2BE /* ConfigViewController.swift */; };
 		66FB9B6E24D380F600A21420 /* StoreLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB9B6D24D380F600A21420 /* StoreLocationResponse.swift */; };
 		66FB9B7124D3ADA200A21420 /* StoreAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB9B7024D3ADA200A21420 /* StoreAddressViewModel.swift */; };
 		66FB9B7424D3B72D00A21420 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB9B7324D3B72D00A21420 /* DetailViewController.swift */; };
-		66FB9B7624D3BB5200A21420 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB9B7524D3BB5200A21420 /* ConfigViewController.swift */; };
 		66FB9B7924D3CE8100A21420 /* TVCStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB9B7724D3CE8100A21420 /* TVCStoreCell.swift */; };
 		66FB9B7A24D3CE8100A21420 /* TVCStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66FB9B7824D3CE8100A21420 /* TVCStoreCell.xib */; };
 		CA5B889B2A0C4BA4A990B746 /* Pods_WMTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E40C27F98F47451ABD24A9 /* Pods_WMTest.framework */; };
@@ -50,10 +50,10 @@
 		6614F20C24D34A7200B2D809 /* WMTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMTestTests.swift; sourceTree = "<group>"; };
 		6614F20E24D34A7200B2D809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6614F21E24D36D1300B2D809 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		6646598224D3E07F003DE2BE /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		66FB9B6D24D380F600A21420 /* StoreLocationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreLocationResponse.swift; sourceTree = "<group>"; };
 		66FB9B7024D3ADA200A21420 /* StoreAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAddressViewModel.swift; sourceTree = "<group>"; };
 		66FB9B7324D3B72D00A21420 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		66FB9B7524D3BB5200A21420 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		66FB9B7724D3CE8100A21420 /* TVCStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCStoreCell.swift; sourceTree = "<group>"; };
 		66FB9B7824D3CE8100A21420 /* TVCStoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVCStoreCell.xib; sourceTree = "<group>"; };
 		7103878F2A3A775BBF2AF354 /* Pods-WMTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMTestTests.release.xcconfig"; path = "Target Support Files/Pods-WMTestTests/Pods-WMTestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 			children = (
 				6614F1F924D34A6B00B2D809 /* ViewController.swift */,
 				66FB9B7324D3B72D00A21420 /* DetailViewController.swift */,
-				66FB9B7524D3BB5200A21420 /* ConfigViewController.swift */,
+				6646598224D3E07F003DE2BE /* ConfigViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -368,8 +368,8 @@
 				66FB9B7924D3CE8100A21420 /* TVCStoreCell.swift in Sources */,
 				66FB9B6E24D380F600A21420 /* StoreLocationResponse.swift in Sources */,
 				6614F1F824D34A6B00B2D809 /* SceneDelegate.swift in Sources */,
-				66FB9B7624D3BB5200A21420 /* ConfigViewController.swift in Sources */,
 				66FB9B7424D3B72D00A21420 /* DetailViewController.swift in Sources */,
+				6646598324D3E07F003DE2BE /* ConfigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

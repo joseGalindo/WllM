@@ -39,7 +39,10 @@ class ViewController: UIViewController {
         
         storesViewModel.getStores()
         
-        // 
+        // Config
+        configBtn.rx.tap.bind { [unowned self] in
+            self.performSegue(withIdentifier: "showConfig", sender: self.storesViewModel)
+        }.disposed(by: storesViewModel.disposeBag)
     }
 
     
@@ -47,6 +50,9 @@ class ViewController: UIViewController {
         if segue.identifier == "showDetail" {
             let vc = segue.destination as! DetailViewController
             vc.storeInfo = sender as? StoreAddress
+        }
+        if segue.identifier == "showConfig" {
+            let vc = segue.destination as! ConfigViewController
         }
     }
 
