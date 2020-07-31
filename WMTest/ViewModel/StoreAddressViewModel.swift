@@ -7,3 +7,22 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
+
+class StoreAddressViewModel {
+    
+    let disposeBag = DisposeBag()
+    var stores : BehaviorRelay<[StoreAddress]> = BehaviorRelay(value: [])
+    
+    func getStores() {
+        ApiService.shared.methodGET(endpoint: .storeLocator, onSuccess: { (response : StoreAddressResponse?) in
+            if let response = response {
+                self.stores.accept(response.responseArray!)
+            }
+        }) { (mError) in
+            
+        }
+    }
+    
+}
