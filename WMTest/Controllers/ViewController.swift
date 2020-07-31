@@ -81,13 +81,10 @@ class ViewController: UIViewController {
     private func showSortingOptions() {
         let menu = UIAlertController(title: "Sorting", message: "How would you like to sort data?", preferredStyle: .actionSheet)
         menu.addAction(UIAlertAction(title: "Ascending", style: .default, handler: { (aa) in
-            
+            self.storesViewModel.sortData(ascending: true)
         }))
         menu.addAction(UIAlertAction(title: "Descending", style: .default, handler: { (aa) in
-            
-        }))
-        menu.addAction(UIAlertAction(title: "Closer", style: .default, handler: { (aa) in
-            
+            self.storesViewModel.sortData(ascending: false)
         }))
         menu.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler:nil))
         self.present(menu, animated: true, completion: nil)

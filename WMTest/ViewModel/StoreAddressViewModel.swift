@@ -21,18 +21,22 @@ class StoreAddressViewModel {
         ApiService.shared.methodGET(endpoint: .storeLocator, onSuccess: { (response : StoreAddressResponse?) in
             if let responseArr = response?.responseArray {
                 self.stores.accept(responseArr)
-                self.isLoading.onNext(false)
             } else {
-                // mandar error
             }
+            self.isLoading.onNext(false)
         }) { (mError) in
             self.isLoading.onNext(false)
         }
     }
     
     func sortData(ascending : Bool) {
-        stores.subscribe(onNext: {ar in })
-            .disposed(by: disposeBag)
+        stores.accept(stores.value.sorted(by: { (ad1, ad2) -> Bool in
+            if ascending {
+                return ad1 < ad2
+            } else {
+                return ad1 > ad2
+            }
+        }))
     }
     
 }
