@@ -28,18 +28,18 @@ class ViewController: UIViewController {
         // TableView Config
         let nib = UINib.init(nibName: "TVCStoreCell", bundle: nil)
         self.mTableView.register(nib, forCellReuseIdentifier: TVCStoreCell.CELL_IDENTIFIER)
+        self.mTableView.rowHeight = UITableView.automaticDimension
+        self.mTableView.estimatedRowHeight = 70
     
         self.bindValues()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         self.navigationItem.largeTitleDisplayMode = .automatic
     }
     
     private func bindValues() {
-        
         storesViewModel.isLoading.subscribe { res in
             if res.element! {
                 ProgressHUD.show("Loading")
@@ -67,7 +67,6 @@ class ViewController: UIViewController {
         }.disposed(by: storesViewModel.disposeBag)
     }
 
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             let vc = segue.destination as! DetailViewController

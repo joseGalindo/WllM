@@ -14,6 +14,7 @@ class TVCStoreCell: UITableViewCell {
     
     // UI
     @IBOutlet weak var storeNameLbl: UILabel!
+    @IBOutlet weak var zipCodeLbl: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,7 +27,8 @@ class TVCStoreCell: UITableViewCell {
     }
     
     func configureCell(_ store : StoreAddress) {
-        self.storeNameLbl.text = store.name
+        self.storeNameLbl.text = "Store Name: " + (store.name ?? "")
+        self.zipCodeLbl.text = "Z.P. " + (store.zipCode ?? "-")
     }
     
 }
