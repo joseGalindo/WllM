@@ -7,7 +7,7 @@ target 'WMTest' do
 
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
-  pod 'INTULocationManager'
+  pod 'ProgressHUD'
 
   target 'WMTestTests' do
     inherit! :search_paths

@@ -12,7 +12,7 @@ final public class ApiService {
 
     private let baseURL = URL(string: "https://www.walmartmobile.com.mx/walmart-services/mg")!
     private var decoder : JSONDecoder!
-    public typealias APIRequestCompleteSuccessClosure<T : Decodable> = (_ responseObj : T?) -> Void
+    public typealias APIRequestCompleteSuccessClosure<T : Decodable> = (_ responseObj : T) -> Void
     public typealias APIRequestCompleteFailureClosure = (_ reason : APIError?) -> Void
     
     public enum APIError: Error {

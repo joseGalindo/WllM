@@ -24,7 +24,13 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Detail"
         self.setUpView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.largeTitleDisplayMode = .never
     }
     
     private func setUpView() {
@@ -35,7 +41,7 @@ class DetailViewController: UIViewController {
             extInfo.append(contentsOf: "\(sched)\n")
         }
         if let phone = storeInfo!.telephone?.split(separator: "/").first {
-            extInfo.append(contentsOf: phone)
+            extInfo.append(contentsOf: "phone: \(phone)")
         }
         self.extraInfoLbl.text = extInfo
         

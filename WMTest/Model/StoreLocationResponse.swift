@@ -32,3 +32,15 @@ struct StoreAddress : Decodable, Identifiable {
     var opens : String?
     
 }
+
+extension StoreAddress : Equatable {
+    static func ==(ls: StoreAddress, rs : StoreAddress) -> Bool {
+        return ls.name! == rs.name!
+    }
+}
+
+extension StoreAddress : Comparable {
+    static func < (lhs: StoreAddress, rhs: StoreAddress) -> Bool {
+        return lhs.name! < rhs.name!
+    }
+}
